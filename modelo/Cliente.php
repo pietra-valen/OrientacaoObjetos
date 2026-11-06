@@ -9,6 +9,14 @@ abstract class Cliente{
     public abstract function getNroDoc();
     public abstract function getTipo();
 
+    public function __toString(): string
+    {
+        $dados = sprintf("%d | %s | %s | %s | %s | %s", 
+            $this->id, $this->getTipo(), $this->nomeSocial, $this->email,
+            $this->getNome() , $this->getNroDoc());
+        return $dados;
+    }
+
     public function getId(): int
     {
         return $this->id;

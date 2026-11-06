@@ -19,7 +19,7 @@ class ClientePF extends Cliente
 
     public function getTipo(): string
     {
-        return "Pessoa Física";
+        return "F";
     }
 
     public function getNomeCompleto(): string

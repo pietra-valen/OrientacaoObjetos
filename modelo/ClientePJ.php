@@ -19,7 +19,7 @@ class ClientePJ extends Cliente
 
     public function getTipo(): string
     {
-        return "Pessoa Jurídica";
+        return "J";
     }
 
     public function getRazaoSocial(): string
